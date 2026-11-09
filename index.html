@@ -99,7 +99,8 @@ h1 em{font-style:normal;font-family:var(--marker);color:var(--tape);font-weight:
 .pic{aspect-ratio:1/1;max-width:100%;border-radius:8px;display:grid;place-items:center;font-size:72px;position:relative}
 .pic.has-foto{background:var(--photo-bg)!important;overflow:hidden}
 .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
-.off,.store{z-index:1}
+.off,.store,.seal{z-index:1}
+.seal{position:absolute;top:8px;left:8px;background:var(--tape);color:var(--tape-ink);font-family:var(--display);font-weight:700;font-size:11px;border-radius:999px;padding:4px 9px;box-shadow:0 1px 3px rgba(0,0,0,.18);max-width:calc(100% - 70px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .off{position:absolute;top:8px;right:8px;background:var(--sale);color:#fff;font-family:var(--display);font-weight:800;
   font-size:14px;border-radius:999px;padding:4px 9px}
 .store{position:absolute;left:8px;bottom:8px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
@@ -191,34 +192,36 @@ h1 em{font-style:normal;font-family:var(--marker);color:var(--tape);font-weight:
   <span>Preços e estoque podem mudar a qualquer momento na loja.</span>
 </footer>
 
-<!-- BASE DE OFERTAS: a tarefa diária reescreve só este bloco JSON e republica a página. -->
+<!-- BASE DE OFERTAS: a tarefa diária reescreve só este bloco JSON. -->
 <script type="application/json" id="ofertas">
 {
   "atualizado": "2026-11-09",
   "itens": [
-    {"id":"amz-B08XQWLDKP","loja":"Amazon","cat":"Ferramentas","emoji":"🔧","nome":"Parafusadeira e furadeira Bosch GSR 1000 Smart 12V, com bateria e maleta","dica":"Bosch de entrada, boa pra montar móvel e furar parede leve.","preco":229.00,"de":399.00,"cond":"Preço exclusivo Prime","url":"https://www.amazon.com.br/dp/B08XQWLDKP?tag=robertobete-20"},
+    {"id":"amz-B08XQWLDKP","loja":"Amazon","cat":"Ferramentas","emoji":"🔧","nome":"Parafusadeira e furadeira Bosch GSR 1000 Smart 12V, com bateria e maleta","dica":"Bosch de entrada, boa pra montar móvel e furar parede leve.","preco":229.0,"de":399.0,"cond":"Preço exclusivo Prime","url":"https://www.amazon.com.br/dp/B08XQWLDKP?tag=robertobete-20"},
     {"id":"amz-B076N2S8FV","loja":"Amazon","cat":"Ferramentas","emoji":"🧰","nome":"Maleta de ferramentas Sparta com 129 peças","dica":"Kit pra ter em casa e resolver o básico sem pedir emprestado.","preco":67.16,"de":140.45,"cond":"Preço exclusivo Prime","url":"https://www.amazon.com.br/dp/B076N2S8FV?tag=robertobete-20"},
-    {"id":"amz-B0FQCSCPSJ","loja":"Amazon","cat":"Cozinha","emoji":"🥪","nome":"Sanduicheira elétrica inox Oster 1000W (127V)","dica":"Lanche da tarde pronto em poucos minutos.","preco":128.39,"de":239.90,"cond":"Preço exclusivo Prime · 127V","url":"https://www.amazon.com.br/dp/B0FQCSCPSJ?tag=robertobete-20"},
-    {"id":"amz-B0BT22CQQ9","loja":"Amazon","cat":"Casa","emoji":"🧹","nome":"Aspirador vertical WAP High Speed Plus 3 em 1 (127V)","dica":"Vira aspirador de mão pra limpar sofá e carro.","preco":129.90,"de":199.90,"cond":"Preço exclusivo Prime · 127V","url":"https://www.amazon.com.br/dp/B0BT22CQQ9?tag=robertobete-20"},
-    {"id":"amz-B0CPFT8QQK","loja":"Amazon","cat":"Casa","emoji":"🔌","nome":"Tomada inteligente Wi-Fi TP-Link Tapo P110","dica":"Liga e desliga aparelhos pelo celular e mostra o consumo.","preco":46.55,"de":79.90,"cond":"","url":"https://www.amazon.com.br/dp/B0CPFT8QQK?tag=robertobete-20"},
-    {"id":"amz-B08FXYKYLW","loja":"Amazon","cat":"Casa","emoji":"💧","nome":"Umidificador de ar WAP Air Flow 4 L com luminária","dica":"Até 12 horas ligado, bom pro quarto em dia seco.","preco":139.90,"de":229.90,"cond":"Preço exclusivo Prime · bivolt","url":"https://www.amazon.com.br/dp/B08FXYKYLW?tag=robertobete-20"},
-    {"id":"ml-blacktools-tb21px","foto":"img/ml-blacktools-tb21px.webp","loja":"Mercado Livre","cat":"Ferramentas","emoji":"🪛","nome":"Parafusadeira de impacto The Black Tools TB-21PX com 2 baterias e maleta","dica":"Duas baterias: uma carrega enquanto a outra trabalha.","preco":139.90,"de":259.90,"cond":"ou 4x sem juros","url":"https://meli.la/1J6mQNi"},
-    {"id":"ml-intelbras-im5sc","foto":"img/ml-intelbras-im5sc.webp","loja":"Mercado Livre","cat":"Casa","emoji":"📷","nome":"Câmera inteligente Wi-Fi Intelbras iM5SC Full HD","dica":"Dá pra ver o quarto das crianças pelo celular.","preco":183.92,"de":299.90,"cond":"No Pix · R$ 229,90 em 6x","url":"https://meli.la/2Amxgjr"},
-    {"id":"ml-kit-cameras-icsee","foto":"img/ml-kit-cameras-icsee.webp","loja":"Mercado Livre","cat":"Casa","emoji":"🎥","nome":"Kit 2 câmeras de segurança Wi-Fi iCSee, interna e externa","dica":"Resistente à chuva e com visão noturna.","preco":185.99,"de":349.00,"cond":"ou 12x de R$ 18,41","url":"https://meli.la/1XRfrzs"},
+    {"id":"amz-B0FQCSCPSJ","loja":"Amazon","cat":"Cozinha","emoji":"🥪","nome":"Sanduicheira elétrica inox Oster 1000W (127V)","dica":"Lanche da tarde pronto em poucos minutos.","preco":128.39,"de":239.9,"cond":"Preço exclusivo Prime · 127V","url":"https://www.amazon.com.br/dp/B0FQCSCPSJ?tag=robertobete-20"},
+    {"id":"amz-B0BT22CQQ9","loja":"Amazon","cat":"Casa","emoji":"🧹","nome":"Aspirador vertical WAP High Speed Plus 3 em 1 (127V)","dica":"Vira aspirador de mão pra limpar sofá e carro.","preco":129.9,"de":199.9,"cond":"Preço exclusivo Prime · 127V","url":"https://www.amazon.com.br/dp/B0BT22CQQ9?tag=robertobete-20"},
+    {"id":"amz-B0CPFT8QQK","loja":"Amazon","cat":"Casa","emoji":"🔌","nome":"Tomada inteligente Wi-Fi TP-Link Tapo P110","dica":"Liga e desliga aparelhos pelo celular e mostra o consumo.","preco":46.55,"de":79.9,"cond":"","url":"https://www.amazon.com.br/dp/B0CPFT8QQK?tag=robertobete-20"},
+    {"id":"amz-B08FXYKYLW","loja":"Amazon","cat":"Casa","emoji":"💧","nome":"Umidificador de ar WAP Air Flow 4 L com luminária","dica":"Até 12 horas ligado, bom pro quarto em dia seco.","preco":139.9,"de":229.9,"cond":"Preço exclusivo Prime · bivolt","url":"https://www.amazon.com.br/dp/B08FXYKYLW?tag=robertobete-20"},
+    {"id":"ml-blacktools-tb21px","foto":"img/ml-blacktools-tb21px.webp","loja":"Mercado Livre","cat":"Ferramentas","emoji":"🪛","nome":"Parafusadeira de impacto The Black Tools TB-21PX com 2 baterias e maleta","dica":"Duas baterias: uma carrega enquanto a outra trabalha.","preco":139.9,"de":259.9,"cond":"ou 4x sem juros","url":"https://meli.la/1J6mQNi"},
+    {"id":"ml-intelbras-im5sc","foto":"img/ml-intelbras-im5sc.webp","loja":"Mercado Livre","cat":"Casa","emoji":"📷","nome":"Câmera inteligente Wi-Fi Intelbras iM5SC Full HD","dica":"Dá pra ver o quarto das crianças pelo celular.","preco":206.91,"de":299.9,"cond":"No Pix · R$ 229,90 em 6x","url":"https://meli.la/2Amxgjr"},
+    {"id":"ml-kit-cameras-icsee","foto":"img/ml-kit-cameras-icsee.webp","loja":"Mercado Livre","cat":"Casa","emoji":"🎥","nome":"Kit 2 câmeras de segurança Wi-Fi iCSee, interna e externa","dica":"Resistente à chuva e com visão noturna.","preco":185.99,"de":349.0,"cond":"ou 12x de R$ 18,41","url":"https://meli.la/1XRfrzs"},
     {"id":"ml-arvore-natal-150","foto":"img/ml-arvore-natal-150.webp","loja":"Mercado Livre","cat":"Casa","emoji":"🎄","nome":"Árvore de Natal Pinheiro Canadense 1,50 m com 450 galhos","dica":"Cheia e fácil de montar com a criançada.","preco":128.71,"de":199.88,"cond":"No Pix · R$ 139,90 em 4x","url":"https://meli.la/2ersw5r"},
-    {"id":"ml-powerbank-20000","foto":"img/ml-powerbank-20000.webp","loja":"Mercado Livre","cat":"Casa","emoji":"🔋","nome":"Carregador portátil power bank 20.000 mAh 22,5W com visor","dica":"Carrega o celular várias vezes num passeio longo.","preco":119.90,"de":299.90,"cond":"","url":"https://meli.la/1WFYKBz"},
+    {"id":"ml-powerbank-20000","foto":"img/ml-powerbank-20000.webp","loja":"Mercado Livre","cat":"Casa","emoji":"🔋","nome":"Carregador portátil power bank 20.000 mAh 22,5W com visor","dica":"Carrega o celular várias vezes num passeio longo.","preco":119.9,"de":299.9,"cond":"","url":"https://meli.la/1WFYKBz"},
     {"id":"shp-58217601055","foto":"img/shp-58217601055.webp","loja":"Shopee","cat":"Ferramentas","emoji":"🛠️","nome":"Parafusadeira e furadeira Nakasaki 25V sem fio com maleta","dica":"Opção mais em conta pra quem está começando.","preco":95.99,"off":68,"cond":"","url":"https://s.shopee.com.br/9fMJv7m1pz"},
-    {"id":"shp-58257668036","foto":"img/shp-58257668036.webp","loja":"Shopee","cat":"Cozinha","emoji":"☕","nome":"Chaleira elétrica inox 1,8 L 1000W","dica":"Água quente pro café e pra mamadeira em minutos.","preco":39.88,"off":49,"cond":"","url":"https://s.shopee.com.br/7AeywWzoAg"},
-    {"id":"shp-22894944958","foto":"img/shp-22894944958.webp","loja":"Shopee","cat":"Cozinha","emoji":"🥄","nome":"Kit de utensílios de silicone para cozinha","dica":"Não risca a panela antiaderente.","preco":18.90,"off":79,"cond":"","url":"https://s.shopee.com.br/8fTmjI2YMv"},
     {"id":"shp-58217580101","foto":"img/shp-58217580101.webp","loja":"Shopee","cat":"Cozinha","emoji":"🔪","nome":"Jogo de facas de cozinha Genebra com 8 peças","dica":"Kit completo por menos de trinta reais.","preco":29.99,"off":70,"cond":"","url":"https://s.shopee.com.br/3g56m6Unep"},
-    {"id":"shp-23293962531","foto":"img/shp-23293962531.webp","loja":"Shopee","cat":"Casa","emoji":"🥤","nome":"Copo térmico inox 1,2 L com alça e canudo","dica":"Mantém a água gelada o dia inteiro.","preco":52.99,"off":34,"cond":"","url":"https://s.shopee.com.br/6fiiLc6BF6"},
-    {"id":"shp-58261121925","foto":"img/shp-58261121925.webp","loja":"Shopee","cat":"Criança","emoji":"🎒","nome":"Garrafa térmica inox com capinha de silicone antiderrapante","dica":"Tamanho de 350 ml cabe na mochila da escola.","preco":31.99,"off":52,"cond":"Escolha o tamanho na loja","url":"https://s.shopee.com.br/1W0cC7Ya0G"}
+    {"id":"ml-fonte-miw-15l","foto":"img/ml-fonte-miw-15l.webp","loja":"Mercado Livre","cat":"Pet","emoji":"🐱","nome":"Fonte bebedouro Miw 1,5 L para gatos e cães","dica":"Água corrente e filtrada à vontade pro bichano, ligada por USB.","preco":48.5,"de":99.0,"cond":"127/220V","url":"https://meli.la/2qcprii"},
+    {"id":"ml-blocos-magneticos-64","foto":"img/ml-blocos-magneticos-64.webp","loja":"Mercado Livre","cat":"Criança","emoji":"🧲","nome":"Blocos magnéticos de montar com 64 peças","dica":"Brinquedo de encaixe pra montar formas e estimular a criatividade.","preco":73.5,"de":150.0,"cond":"","url":"https://meli.la/2Xr1wNt"},
+    {"id":"shp-54557028525","foto":"img/shp-54557028525.webp","loja":"Shopee","cat":"Cozinha","emoji":"☕","nome":"Chaleira elétrica inox 1,8 L com desligamento automático","dica":"Desliga sozinha quando a água ferve, prática pro café do dia a dia.","preco":43.9,"off":44,"cond":"Escolha a voltagem na loja","url":"https://s.shopee.com.br/4qH4webEZs"},
+    {"id":"shp-19060155482","foto":"img/shp-19060155482.webp","loja":"Shopee","cat":"Pet","emoji":"🐶","nome":"Caminha colchonete para cães e gatos","dica":"Colchonete simples pro pet descansar, com mais de 6 mil vendas.","preco":14.23,"off":35,"cond":"Preço pode variar conforme o tamanho","url":"https://s.shopee.com.br/2gCaMgVSyZ"},
+    {"id":"shp-23999005077","foto":"img/shp-23999005077.webp","loja":"Shopee","cat":"Criança","emoji":"🧩","nome":"Quebra-cabeça 3D de madeira para crianças a partir de 2 anos","dica":"Peças de madeira coloridas pra montar e brincar.","preco":22.99,"off":50,"cond":"","url":"https://s.shopee.com.br/AUvRh5Wmtq"},
+    {"id":"shp-58261158069","foto":"img/shp-58261158069.webp","loja":"Shopee","cat":"Cozinha","emoji":"🥄","nome":"Kit 12 utensílios de silicone com cabo de bambu","dica":"Silicone não risca a panela antiaderente.","preco":31.8,"off":50,"cond":"","url":"https://s.shopee.com.br/8Kqx77EEX4"}
   ]
 }
 </script>
 
 <script>
-const ORDEM=["Cozinha","Casa","Criança","Pet","Ferramentas"];
+const ORDEM=["Cozinha","Casa","Looks","Criança","Pet","Ferramentas"];
 let dados={atualizado:"",itens:[]};
 try{dados=JSON.parse(document.getElementById("ofertas").textContent)}catch(e){}
 const itens=(dados.itens||[]).filter(i=>i&&i.url&&typeof i.preco==="number");
@@ -233,7 +236,7 @@ function drawChips(){chips.innerHTML="";cats.forEach(c=>{const b=el("button","ch
  const n=c==="Tudo"?itens.length:itens.filter(i=>i.cat===c).length;b.appendChild(el("small",null,String(n)));
  b.setAttribute("aria-pressed",c===cur);b.onclick=()=>{cur=c;drawChips();drawGrid()};chips.appendChild(b)})}
 function drawGrid(){grid.innerHTML="";
- const lista=itens.filter(i=>cur==="Tudo"||i.cat===cur).sort((a,b)=>off(b)-off(a));
+ const lista=itens.filter(i=>cur==="Tudo"||i.cat===cur).sort((a,b)=>(b.testado?1:0)-(a.testado?1:0)||off(b)-off(a));
  if(!lista.length){grid.appendChild(el("p","empty","As ofertas de hoje ainda estão sendo garimpadas. Volta daqui a pouco."));return}
  lista.forEach((i,k)=>{
   const a=el("article","tag");
@@ -242,6 +245,7 @@ function drawGrid(){grid.innerHTML="";
    im.onerror=()=>{im.remove();pic.classList.remove("has-foto");const e2=el("span",null,i.emoji||"🛒");e2.setAttribute("aria-hidden","true");pic.prepend(e2)};pic.appendChild(im)}
   else{const em=el("span",null,i.emoji||"🛒");em.setAttribute("aria-hidden","true");pic.appendChild(em)}
   const o=off(i);if(o>0)pic.appendChild(el("span","off","-"+o+"%"));
+  if(i.testado)pic.appendChild(el("span","seal","🏠 Testado pelo Papai"));
   pic.appendChild(el("span","store",i.loja));a.appendChild(pic);
   a.appendChild(el("h2","name",i.nome));
   if(i.dica)a.appendChild(el("p","tip",i.dica));
@@ -254,6 +258,5 @@ if(dados.atualizado){const [y,m,d]=dados.atualizado.split("-").map(Number);
  document.getElementById("today").textContent=new Date(y,m-1,d).toLocaleDateString("pt-BR",{day:"2-digit",month:"long"})}
 drawChips();drawGrid();
 </script>
-
 </body>
 </html>
