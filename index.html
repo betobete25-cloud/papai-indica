@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Ofertas do dia garimpadas pelo Roberto Bete na Amazon, no Mercado Livre e na Shopee: casa, cozinha, crianças e reforma.">
+<meta property="og:title" content="Papai Indica · ofertas do dia">
+<meta property="og:description" content="Ofertas pra casa, cozinha, crianças e reforma, renovadas todo dia.">
+<meta property="og:image" content="https://opapaiindica.com.br/img/roberto.webp">
+<meta property="og:url" content="https://opapaiindica.com.br/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#b0154f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M12 20h40l-3 38H15z' fill='%23ffc83d' stroke='%232a1f00' stroke-width='3'/%3E%3Cpath d='M23 22c0-9 4-14 9-14s9 5 9 14' fill='none' stroke='%232a1f00' stroke-width='3'/%3E%3C/svg%3E">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Papai Indica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=Permanent+Marker&display=swap">
+<style>
+/* Layout: vitrine de oferta — topo ilustrado com sacolas, etiquetas e carrinho; etiquetas penduradas como produtos; fita amarela de promoção como destaque */
+:root{
+  --bg:#eef1f6;
+  --surface:#ffffff;
+  --ink:#16202e;
+  --muted:#5a6678;
+  --line:#d6dce6;
+  --board:#b0154f;
+  --board-2:#e8590c;
+  --board-ink:#eaf0fa;
+  --tape:#ffc83d;
+  --tape-ink:#2a1f00;
+  --sale:#d6336c;
+  --good:#1f8a5b;
+  --photo-bg:#ffffff;
+  --tile-1:#ffe3d6;--tile-2:#dbe7ff;--tile-3:#e5f6ea;--tile-4:#fff1c2;--tile-5:#f1e4ff;--tile-6:#ffe0ea;
+  --display:"Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
+  --body:"Figtree", "Segoe UI", system-ui, sans-serif;
+  --marker:"Permanent Marker", "Comic Sans MS", cursive;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1520;--surface:#18212f;--ink:#e8edf5;--muted:#9aa6b8;--line:#2a3547;
+  --board:#7a0f38;--board-2:#b5410a;--board-ink:#eaf0fa;--tape:#ffcf52;--tape-ink:#2a1f00;--sale:#ff6b9a;--good:#4cc38a;
+  --tile-1:#3a2a24;--tile-2:#22304a;--tile-3:#1f3528;--tile-4:#3a3320;--tile-5:#2f2640;--tile-6:#3a2430;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1520;--surface:#18212f;--ink:#e8edf5;--muted:#9aa6b8;--line:#2a3547;
+  --board:#7a0f38;--board-2:#b5410a;--board-ink:#eaf0fa;--tape:#ffcf52;--tape-ink:#2a1f00;--sale:#ff6b9a;--good:#4cc38a;
+  --tile-1:#3a2a24;--tile-2:#22304a;--tile-3:#1f3528;--tile-4:#3a3320;--tile-5:#2f2640;--tile-6:#3a2430;color-scheme:dark}
+
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+
+.board{background-color:var(--board);color:var(--board-ink);
+  background-image:linear-gradient(115deg,var(--board) 0%,var(--board) 35%,var(--board-2) 100%);
+  position:relative;overflow:hidden;isolation:isolate}
+.board .art{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+.board .hero-bag{position:absolute;right:max(16px,6vw);bottom:-10px;width:clamp(150px,24vw,270px);height:auto;z-index:-1;pointer-events:none;transform:rotate(6deg)}
+@media (max-width:760px){.board .hero-bag{opacity:.35;right:-30px;width:180px}}
+.board .wrap{padding-block:36px 56px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+.avatar{width:132px;height:132px;border-radius:50%;background:var(--tape);color:var(--tape-ink);
+  display:grid;place-items:center;text-align:center;font-family:var(--marker);font-size:15px;line-height:1.15;
+  border:5px solid var(--board-ink);box-shadow:0 8px 0 rgba(0,0,0,.25);transform:rotate(-4deg);padding:0;overflow:hidden}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block;border-radius:50%}
+.avatar b{display:block;font-family:var(--display);font-size:40px;line-height:1;margin-bottom:4px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.75;font-weight:600}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(38px,7vw,72px);line-height:.95;margin:6px 0 12px;text-wrap:balance;letter-spacing:-.02em}
+h1 em{font-style:normal;font-family:var(--marker);color:var(--tape);font-weight:400;letter-spacing:0}
+.board .wrap > div:last-child{min-width:0;text-shadow:0 1px 2px rgba(0,0,0,.25)}
+.lede{max-width:52ch;margin:0;font-size:16px;opacity:.9}
+.handle{display:inline-flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.handle span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:5px 12px;font-size:13px;font-weight:500}
+
+.tape{background:var(--tape);color:var(--tape-ink);font-family:var(--display);font-weight:700;
+  font-size:14px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;overflow:hidden;
+  transform:rotate(-1.2deg);margin:-18px -12px 0;position:relative;z-index:2;box-shadow:0 4px 0 rgba(0,0,0,.12)}
+.tape-track{display:inline-flex;gap:32px;padding-block:10px;animation:roll 38s linear infinite}
+.tape-track span::after{content:"✦";margin-left:32px;opacity:.6}
+@keyframes roll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.tape-track{animation:none}}
+
+.bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding-block:32px 8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:inherit;font-weight:600;font-size:14px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);
+  border-radius:999px;padding:7px 14px;cursor:pointer}
+.chip:hover{border-color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip small{font-weight:500;opacity:.6;margin-left:4px}
+.chip:focus-visible,.buy:focus-visible{outline:3px solid var(--tape);outline-offset:2px}
+.stamp{font-size:13px;color:var(--muted)}
+.stamp b{color:var(--good)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:28px 20px;padding-block:24px 48px}
+.tag{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:6px 6px 14px 14px;
+  padding:14px;display:flex;flex-direction:column;gap:10px;min-width:0;transition:transform .2s ease}
+.tag::before{content:"";position:absolute;top:-11px;left:50%;width:22px;height:22px;margin-left:-11px;border-radius:50%;
+  background:var(--bg);border:1px solid var(--line)}
+.tag:hover{transform:rotate(-1deg) translateY(-3px)}
+@media (prefers-reduced-motion:reduce){.tag:hover{transform:none}}
+.pic{aspect-ratio:1/1;max-width:100%;border-radius:8px;display:grid;place-items:center;font-size:72px;position:relative}
+.pic.has-foto{background:var(--photo-bg)!important;overflow:hidden}
+.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+.off,.store{z-index:1}
+.off{position:absolute;top:8px;right:8px;background:var(--sale);color:#fff;font-family:var(--display);font-weight:800;
+  font-size:14px;border-radius:999px;padding:4px 9px}
+.store{position:absolute;left:8px;bottom:8px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  background:var(--surface);color:var(--ink);border-radius:6px;padding:3px 7px;box-shadow:0 1px 3px rgba(0,0,0,.18)}
+.name{font-family:var(--display);font-weight:700;font-size:17px;line-height:1.2;margin:0;text-wrap:balance;overflow-wrap:anywhere}
+.tip{font-size:14px;color:var(--muted);margin:0}
+.price{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin-top:auto;font-variant-numeric:tabular-nums}
+.price .now{font-family:var(--marker);font-size:28px;color:var(--sale);line-height:1}
+.price .was{font-size:13px;color:var(--muted);text-decoration:line-through}
+.price .cond{flex-basis:100%;font-size:12px;color:var(--muted)}
+.buy{display:block;text-align:center;text-decoration:none;font-weight:700;font-size:15px;background:var(--tape);color:var(--tape-ink);
+  border-radius:10px;padding:11px;border:0;cursor:pointer;font-family:inherit}
+.buy:hover{filter:brightness(.95)}
+.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:40px 0}
+
+.foot{border-top:1px solid var(--line);padding-block:24px 40px;color:var(--muted);font-size:13px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+@media (max-width:560px){
+  .board .wrap{grid-template-columns:1fr;gap:20px;padding-block:28px 48px}
+  .avatar{width:104px;height:104px;font-size:13px}
+  .avatar b{font-size:32px}
+  .grid{grid-template-columns:1fr 1fr;gap:24px 12px}
+  .pic{font-size:52px}
+  .name{font-size:15px}
+  .tip{font-size:13px}
+  .price .now{font-size:23px}
+}
+@media (max-width:360px){.grid{grid-template-columns:1fr}}
+</style>
+
+</head>
+<body>
+<header class="board">
+  <svg class="art" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <pattern id="compras" width="240" height="240" patternUnits="userSpaceOnUse" patternTransform="rotate(-8)">
+        <g fill="none" stroke="rgba(255,255,255,.16)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 48h46l-4 50H26z"/><path d="M34 48c0-12 6-20 11-20s11 8 11 20"/>
+          <path d="M140 30h40l16 18-16 18h-40a5 5 0 0 1-5-5V35a5 5 0 0 1 5-5z"/><circle cx="182" cy="48" r="3"/>
+          <path d="M152 42l14 14M152 56l0 0M166 42l0 0"/>
+          <path d="M24 150h14l10 44h44l10-30H44"/><circle cx="56" cy="206" r="5"/><circle cx="86" cy="206" r="5"/>
+          <path d="M150 150h52v40h-52z"/><path d="M146 138h60v12h-60z"/><path d="M176 138v52"/><path d="M176 138c-8-14-22-12-18-2 2 4 10 2 18 2 8 0 16 2 18-2 4-10-10-12-18 2"/>
+          <path d="M112 110l4-9 4 9 9 4-9 4-4 9-4-9-9-4z"/>
+          <path d="M210 214l3-6 3 6 6 3-6 3-3 6-3-6-6-3z"/>
+        </g>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#compras)"/>
+  </svg>
+  <svg class="hero-bag" viewBox="0 0 240 280" aria-hidden="true">
+      <path d="M78 78c0-30 18-52 42-52s42 22 42 52" fill="none" stroke="#2a1f00" stroke-width="10" stroke-linecap="round"/>
+      <path d="M36 82h168l-12 178a14 14 0 0 1-14 13H62a14 14 0 0 1-14-13z" fill="#ffc83d" stroke="#2a1f00" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M36 82h168l-3 34H39z" fill="#f5b400"/>
+      <circle cx="84" cy="104" r="7" fill="#2a1f00"/><circle cx="156" cy="104" r="7" fill="#2a1f00"/>
+      <g transform="rotate(-14 120 190)">
+        <path d="M74 158h76l26 32-26 32H74a8 8 0 0 1-8-8v-48a8 8 0 0 1 8-8z" fill="#ffffff" stroke="#2a1f00" stroke-width="5" stroke-linejoin="round"/>
+        <circle cx="154" cy="190" r="6" fill="#2a1f00"/>
+        <text x="106" y="203" text-anchor="middle" font-family="Bricolage Grotesque, system-ui, sans-serif" font-weight="800" font-size="38" fill="#d6336c">%</text>
+      </g>
+    </svg>
+  <div class="wrap">
+    <div class="avatar"><img src="img/roberto.webp" alt="Roberto Bete" width="132" height="132"></div>
+    <div>
+      <div class="eyebrow">Garimpado pelo Roberto Bete</div>
+      <h1>Papai <em>Indica</em></h1>
+      <p class="lede">Ofertas pra casa, cozinha, crianças e reforma. A lista é renovada todo dia e só entra o que está com desconto de verdade.</p>
+      <div class="handle"><span>@roberto_bete</span><span>@opapaiindica</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="tape" aria-hidden="true">
+  <div class="tape-track">
+    <span>Ofertas novas todo dia</span><span>Preço conferido na loja</span><span>Amazon · Mercado Livre · Shopee</span><span>Preço caiu, entrou aqui</span>
+    <span>Ofertas novas todo dia</span><span>Preço conferido na loja</span><span>Amazon · Mercado Livre · Shopee</span><span>Preço caiu, entrou aqui</span>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="bar">
+    <div class="chips" role="group" aria-label="Filtrar por categoria" id="chips"></div>
+    <div class="stamp">Preços conferidos em <b id="today">—</b></div>
+  </div>
+  <section class="grid" id="grid" aria-live="polite"></section>
+</main>
+
+<footer class="wrap foot">
+  <span>Os links são de afiliado: você paga o mesmo e eu ganho uma comissão que ajuda o canal. Como associado da Amazon, recebo por compras qualificadas.</span>
+  <span>Preços e estoque podem mudar a qualquer momento na loja.</span>
+</footer>
+
+<!-- BASE DE OFERTAS: a tarefa diária reescreve só este bloco JSON e republica a página. -->
+<script type="application/json" id="ofertas">
+{
+  "atualizado": "2026-11-09",
+  "itens": [
+    {"id":"amz-B08XQWLDKP","loja":"Amazon","cat":"Ferramentas","emoji":"🔧","nome":"Parafusadeira e furadeira Bosch GSR 1000 Smart 12V, com bateria e maleta","dica":"Bosch de entrada, boa pra montar móvel e furar parede leve.","preco":229.00,"de":399.00,"cond":"Preço exclusivo Prime","url":"https://www.amazon.com.br/dp/B08XQWLDKP?tag=robertobete-20"},
+    {"id":"amz-B076N2S8FV","loja":"Amazon","cat":"Ferramentas","emoji":"🧰","nome":"Maleta de ferramentas Sparta com 129 peças","dica":"Kit pra ter em casa e resolver o básico sem pedir emprestado.","preco":67.16,"de":140.45,"cond":"Preço exclusivo Prime","url":"https://www.amazon.com.br/dp/B076N2S8FV?tag=robertobete-20"},
+    {"id":"amz-B0FQCSCPSJ","loja":"Amazon","cat":"Cozinha","emoji":"🥪","nome":"Sanduicheira elétrica inox Oster 1000W (127V)","dica":"Lanche da tarde pronto em poucos minutos.","preco":128.39,"de":239.90,"cond":"Preço exclusivo Prime · 127V","url":"https://www.amazon.com.br/dp/B0FQCSCPSJ?tag=robertobete-20"},
+    {"id":"amz-B0BT22CQQ9","loja":"Amazon","cat":"Casa","emoji":"🧹","nome":"Aspirador vertical WAP High Speed Plus 3 em 1 (127V)","dica":"Vira aspirador de mão pra limpar sofá e carro.","preco":129.90,"de":199.90,"cond":"Preço exclusivo Prime · 127V","url":"https://www.amazon.com.br/dp/B0BT22CQQ9?tag=robertobete-20"},
+    {"id":"amz-B0CPFT8QQK","loja":"Amazon","cat":"Casa","emoji":"🔌","nome":"Tomada inteligente Wi-Fi TP-Link Tapo P110","dica":"Liga e desliga aparelhos pelo celular e mostra o consumo.","preco":46.55,"de":79.90,"cond":"","url":"https://www.amazon.com.br/dp/B0CPFT8QQK?tag=robertobete-20"},
+    {"id":"amz-B08FXYKYLW","loja":"Amazon","cat":"Casa","emoji":"💧","nome":"Umidificador de ar WAP Air Flow 4 L com luminária","dica":"Até 12 horas ligado, bom pro quarto em dia seco.","preco":139.90,"de":229.90,"cond":"Preço exclusivo Prime · bivolt","url":"https://www.amazon.com.br/dp/B08FXYKYLW?tag=robertobete-20"},
+    {"id":"ml-blacktools-tb21px","foto":"img/ml-blacktools-tb21px.webp","loja":"Mercado Livre","cat":"Ferramentas","emoji":"🪛","nome":"Parafusadeira de impacto The Black Tools TB-21PX com 2 baterias e maleta","dica":"Duas baterias: uma carrega enquanto a outra trabalha.","preco":139.90,"de":259.90,"cond":"ou 4x sem juros","url":"https://meli.la/1J6mQNi"},
+    {"id":"ml-intelbras-im5sc","foto":"img/ml-intelbras-im5sc.webp","loja":"Mercado Livre","cat":"Casa","emoji":"📷","nome":"Câmera inteligente Wi-Fi Intelbras iM5SC Full HD","dica":"Dá pra ver o quarto das crianças pelo celular.","preco":183.92,"de":299.90,"cond":"No Pix · R$ 229,90 em 6x","url":"https://meli.la/2Amxgjr"},
+    {"id":"ml-kit-cameras-icsee","foto":"img/ml-kit-cameras-icsee.webp","loja":"Mercado Livre","cat":"Casa","emoji":"🎥","nome":"Kit 2 câmeras de segurança Wi-Fi iCSee, interna e externa","dica":"Resistente à chuva e com visão noturna.","preco":185.99,"de":349.00,"cond":"ou 12x de R$ 18,41","url":"https://meli.la/1XRfrzs"},
+    {"id":"ml-arvore-natal-150","foto":"img/ml-arvore-natal-150.webp","loja":"Mercado Livre","cat":"Casa","emoji":"🎄","nome":"Árvore de Natal Pinheiro Canadense 1,50 m com 450 galhos","dica":"Cheia e fácil de montar com a criançada.","preco":128.71,"de":199.88,"cond":"No Pix · R$ 139,90 em 4x","url":"https://meli.la/2ersw5r"},
+    {"id":"ml-powerbank-20000","foto":"img/ml-powerbank-20000.webp","loja":"Mercado Livre","cat":"Casa","emoji":"🔋","nome":"Carregador portátil power bank 20.000 mAh 22,5W com visor","dica":"Carrega o celular várias vezes num passeio longo.","preco":119.90,"de":299.90,"cond":"","url":"https://meli.la/1WFYKBz"},
+    {"id":"shp-58217601055","foto":"img/shp-58217601055.webp","loja":"Shopee","cat":"Ferramentas","emoji":"🛠️","nome":"Parafusadeira e furadeira Nakasaki 25V sem fio com maleta","dica":"Opção mais em conta pra quem está começando.","preco":95.99,"off":68,"cond":"","url":"https://s.shopee.com.br/9fMJv7m1pz"},
+    {"id":"shp-58257668036","foto":"img/shp-58257668036.webp","loja":"Shopee","cat":"Cozinha","emoji":"☕","nome":"Chaleira elétrica inox 1,8 L 1000W","dica":"Água quente pro café e pra mamadeira em minutos.","preco":39.88,"off":49,"cond":"","url":"https://s.shopee.com.br/7AeywWzoAg"},
+    {"id":"shp-22894944958","foto":"img/shp-22894944958.webp","loja":"Shopee","cat":"Cozinha","emoji":"🥄","nome":"Kit de utensílios de silicone para cozinha","dica":"Não risca a panela antiaderente.","preco":18.90,"off":79,"cond":"","url":"https://s.shopee.com.br/8fTmjI2YMv"},
+    {"id":"shp-58217580101","foto":"img/shp-58217580101.webp","loja":"Shopee","cat":"Cozinha","emoji":"🔪","nome":"Jogo de facas de cozinha Genebra com 8 peças","dica":"Kit completo por menos de trinta reais.","preco":29.99,"off":70,"cond":"","url":"https://s.shopee.com.br/3g56m6Unep"},
+    {"id":"shp-23293962531","foto":"img/shp-23293962531.webp","loja":"Shopee","cat":"Casa","emoji":"🥤","nome":"Copo térmico inox 1,2 L com alça e canudo","dica":"Mantém a água gelada o dia inteiro.","preco":52.99,"off":34,"cond":"","url":"https://s.shopee.com.br/6fiiLc6BF6"},
+    {"id":"shp-58261121925","foto":"img/shp-58261121925.webp","loja":"Shopee","cat":"Criança","emoji":"🎒","nome":"Garrafa térmica inox com capinha de silicone antiderrapante","dica":"Tamanho de 350 ml cabe na mochila da escola.","preco":31.99,"off":52,"cond":"Escolha o tamanho na loja","url":"https://s.shopee.com.br/1W0cC7Ya0G"}
+  ]
+}
+</script>
+
+<script>
+const ORDEM=["Cozinha","Casa","Criança","Pet","Ferramentas"];
+let dados={atualizado:"",itens:[]};
+try{dados=JSON.parse(document.getElementById("ofertas").textContent)}catch(e){}
+const itens=(dados.itens||[]).filter(i=>i&&i.url&&typeof i.preco==="number");
+const brl=v=>v.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+const off=i=>i.de&&i.de>i.preco?Math.round((1-i.preco/i.de)*100):(i.off||0);
+const tiles=["--tile-1","--tile-2","--tile-3","--tile-4","--tile-5","--tile-6"];
+const cats=["Tudo",...ORDEM.filter(c=>itens.some(i=>i.cat===c))];
+let cur="Tudo";
+const chips=document.getElementById("chips"),grid=document.getElementById("grid");
+function el(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e}
+function drawChips(){chips.innerHTML="";cats.forEach(c=>{const b=el("button","chip",c);b.type="button";b.id="chip-"+c;
+ const n=c==="Tudo"?itens.length:itens.filter(i=>i.cat===c).length;b.appendChild(el("small",null,String(n)));
+ b.setAttribute("aria-pressed",c===cur);b.onclick=()=>{cur=c;drawChips();drawGrid()};chips.appendChild(b)})}
+function drawGrid(){grid.innerHTML="";
+ const lista=itens.filter(i=>cur==="Tudo"||i.cat===cur).sort((a,b)=>off(b)-off(a));
+ if(!lista.length){grid.appendChild(el("p","empty","As ofertas de hoje ainda estão sendo garimpadas. Volta daqui a pouco."));return}
+ lista.forEach((i,k)=>{
+  const a=el("article","tag");
+  const pic=el("div","pic");pic.style.background=`var(${tiles[k%tiles.length]})`;
+  if(i.foto){pic.classList.add("has-foto");const im=el("img");im.src=i.foto;im.alt=i.nome;im.loading="lazy";im.decoding="async";
+   im.onerror=()=>{im.remove();pic.classList.remove("has-foto");const e2=el("span",null,i.emoji||"🛒");e2.setAttribute("aria-hidden","true");pic.prepend(e2)};pic.appendChild(im)}
+  else{const em=el("span",null,i.emoji||"🛒");em.setAttribute("aria-hidden","true");pic.appendChild(em)}
+  const o=off(i);if(o>0)pic.appendChild(el("span","off","-"+o+"%"));
+  pic.appendChild(el("span","store",i.loja));a.appendChild(pic);
+  a.appendChild(el("h2","name",i.nome));
+  if(i.dica)a.appendChild(el("p","tip",i.dica));
+  const pr=el("div","price");pr.appendChild(el("span","now",brl(i.preco)));
+  if(i.de&&i.de>i.preco)pr.appendChild(el("span","was",brl(i.de)));
+  if(i.cond)pr.appendChild(el("span","cond",i.cond));a.appendChild(pr);
+  const link=el("a","buy",(i.loja==="Mercado Livre"?"Ver no ":"Ver na ")+i.loja);link.href=i.url;link.target="_blank";link.rel="nofollow sponsored noopener";a.appendChild(link);
+  grid.appendChild(a)})}
+if(dados.atualizado){const [y,m,d]=dados.atualizado.split("-").map(Number);
+ document.getElementById("today").textContent=new Date(y,m-1,d).toLocaleDateString("pt-BR",{day:"2-digit",month:"long"})}
+drawChips();drawGrid();
+</script>
+
+</body>
+</html>
