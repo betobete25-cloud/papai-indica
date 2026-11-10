@@ -174,8 +174,8 @@ h1 em{font-style:normal;font-family:var(--marker);color:var(--tape);font-weight:
 
 <div class="tape" aria-hidden="true">
   <div class="tape-track">
-    <span>Ofertas novas todo dia</span><span>Preço conferido na loja</span><span>Amazon · Mercado Livre · Shopee</span><span>Preço caiu, entrou aqui</span>
-    <span>Ofertas novas todo dia</span><span>Preço conferido na loja</span><span>Amazon · Mercado Livre · Shopee</span><span>Preço caiu, entrou aqui</span>
+    <span>Ofertas novas todo dia</span><span>Preço conferido na loja</span><span>Amazon · Mercado Livre · Shopee · SHEIN · TikTok Shop</span><span>Preço caiu, entrou aqui</span>
+    <span>Ofertas novas todo dia</span><span>Preço conferido na loja</span><span>Amazon · Mercado Livre · Shopee · SHEIN · TikTok Shop</span><span>Preço caiu, entrou aqui</span>
   </div>
 </div>
 
@@ -298,7 +298,7 @@ function drawGrid(){grid.innerHTML="";
   const pr=el("div","price");pr.appendChild(el("span","now",brl(i.preco)));
   if(i.de&&i.de>i.preco)pr.appendChild(el("span","was",brl(i.de)));
   if(i.cond)pr.appendChild(el("span","cond",i.cond));a.appendChild(pr);
-  const link=el("a","buy",(i.loja==="Mercado Livre"?"Ver no ":"Ver na ")+i.loja);link.href=i.url;link.target="_blank";link.rel="nofollow sponsored noopener";a.appendChild(link);
+  const link=el("a","buy",(i.loja==="Mercado Livre"||i.loja==="TikTok Shop"?"Ver no ":"Ver na ")+i.loja);link.href=i.url;link.target="_blank";link.rel="nofollow sponsored noopener";a.appendChild(link);
   grid.appendChild(a)})}
 if(dados.atualizado){const [y,m,d]=dados.atualizado.split("-").map(Number);
  document.getElementById("today").textContent=new Date(y,m-1,d).toLocaleDateString("pt-BR",{day:"2-digit",month:"long"})}
